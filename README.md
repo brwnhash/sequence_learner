@@ -20,9 +20,16 @@ For proof of concept there is multipication table memorization in run_tests.py .
     output:
 
 
-     next table for 1 
-     .....
-     .......
+    next table for 2 and initial values given are [2, 4, 6]
+        [{'match': 8, 'score': 0.8}, {'match': 7, 'score': 0.2}]
+        [{'match': 10, 'score': 0.666667}, {'match': 9, 'score': 0.166667}, {'match': 11, 'score': 0.166667}]
+        [{'match': 12, 'score': 0.8}, {'match': 13, 'score': 0.2}]
+        [{'match': 14, 'score': 0.666667}, {'match': 15, 'score': 0.166667}, {'match': 13, 'score': 0.166667}]
+        [{'match': 16, 'score': 0.8}, {'match': 17, 'score': 0.2}]
+        [{'match': 18, 'score': 0.8}, {'match': 19, 'score': 0.2}]
+
+    .......
+    .......
 
 
     next table for 30 and initial values given are [30, 60, 90]
@@ -33,9 +40,9 @@ For proof of concept there is multipication table memorization in run_tests.py .
         [{'match': 240, 'score': 0.8}, {'match': 241, 'score': 0.2}],
         [{'match': 270, 'score': 0.8}, {'match': 269, 'score': 0.2}]
 
-    initial values are starting reference values after which next possible values must be predicted .
+    initial values are starting reference values after which next possible values will be predicted .
     for table of 30 ,we have given 30,60,90 as start values .As learner has learnt multipication tables.
-    next values are  120,150,180,210,240,270  . output also shows for every iteration other possible match like 
+    next values should be  120,150,180,210,240,270  . output also shows for every iteration other possible match like 
     in first row 121 is other match along with 120 .That is because we had settings where we allow nearby numbers to have
     overlapping bits .Idea of overlapping bits is similar to word embeddings.
 
