@@ -1,0 +1,1 @@
+from .test_use_cases import train_predict_multipication_tables
