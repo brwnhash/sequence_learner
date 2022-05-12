@@ -1,6 +1,14 @@
 # Sequence Learner
- Sequnce Learner implements the idea of one shot sequence learning using generative hebbian style learning . Core cocept is similar to Numentas HTM temproral learner but we have a different implementation ,rather than being biological correct ,we tried to have biological inspired implementation .
+ Sequnce Learner implements the idea of one shot sequence learning using generative hebbian style learning .Its analogus to RNN or LSTM . It can be understood as forward learning algorith rather than backward learning .Core cocept is similar to Numentas HTM temproral learner but we have a different implementation ,rather than being biological correct ,we tried to have biological inspired implementation .
 Learner more of tries to do memorization of sequnces like humans do .
+
+#Core Idea :
+ We start with the assumption that words or numbers are represented as sparse vectors. Maximum 10% to 20% bits should be active in a vector .Similar words or numbers can have overlap like word embeddings etc ,but its as per use case .For example
+ if we have numbers 1 to 5 and we have 10 bits per number. Then 1 can be represented as 1100000000 , 2 can be 0011000000 and so
+ on here we are assuming no overlap between consecutive numbers but its possible that they have common bits.
+  Every bit is like a cortical column and every column can have N bits ,usually 4 to 16 should work fine .To learn a sequence if have a existing sequence it will choose the same bits from the column and increase its weight ,for a new sequence least used bits in column will be chosen .
+
+ 
 
 For proof of concept there is multipication table memorization in run_tests.py .
     Multipication table of 1 to 30 
