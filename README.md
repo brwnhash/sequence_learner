@@ -40,11 +40,11 @@ For proof of concept there is multipication table memorization in run_tests.py .
         [{'match': 240, 'score': 0.8}, {'match': 241, 'score': 0.2}],
         [{'match': 270, 'score': 0.8}, {'match': 269, 'score': 0.2}]
 
-    initial values are starting reference values after which next possible values will be predicted .
-    for table of 30 ,we have given 30,60,90 as start values .As learner has learnt multipication tables.
-    next values should be  120,150,180,210,240,270  . output also shows for every iteration other possible match like 
-    in first row 121 is other match along with 120 .That is because we had settings where we allow nearby numbers to have
-    overlapping bits .Idea of overlapping bits is similar to word embeddings.
+initial values are starting reference values after which next possible values will be predicted .
+for table of 30 ,we have given 30,60,90 as start values .As learner has learnt multipication tables.
+next values should be  120,150,180,210,240,270  . output also shows for every iteration other possible match like 
+in first row 121 is other match along with 120 .That is because we had settings where we allow nearby numbers to have
+overlapping bits .Idea of overlapping bits is similar to word embeddings.
 
 
 Idea works for building word embeddings ,language modelling as well but those learners are not added here .
