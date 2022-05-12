@@ -1,5 +1,5 @@
 # Sequence Learner
- Sequnce Learner implements the idea of one shot sequence learning using generative hebbian style learning .Its analogus to RNN or LSTM . It can be understood as forward learning algorith rather than backward learning .Core cocept is similar to Numentas HTM temproral learner but we have a different implementation ,rather than being biological correct ,we tried to have biological inspired implementation .
+ Sequnce Learner implements the idea of one shot sequence learning using generative hebbian style learning .Its analogus to RNN or LSTM . It can be understood as forward learning algorithm rather than backward learning .Core cocept is similar to Numentas HTM temproral learner but we have a different implementation ,rather than being biological correct ,we tried to have biological inspired implementation .
 Learner more of tries to do memorization of sequnces like humans do .
 
 #Core Idea :
