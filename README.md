@@ -1,2 +1,2 @@
-# sequnce_learner
+# sequence_learner
  sequence learner
